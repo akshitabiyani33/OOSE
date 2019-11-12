@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Restaurants | Login</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style type="text/css">
+  		body{
+  			margin: 0;
+        	padding: 0;
+        	font-family: sans-serif;
+			background-image: url('signupbg2.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center left;
+  		}
+  		.navbar{
+        	margin-bottom: 0;
+    	}
+    	.outer{
+    		margin: 10vh 12vw;
+    		padding: 40px 7vw;
+    		background-image: linear-gradient(#ba68c8,#e53935   )   ;
+    		background-size: cover;
+    		position: relative;
+    		height: auto;
+    		width: 75%;
+    		border-radius: 25px;
+    	}
+    	.input-group{
+    		margin-bottom: 10px;
+    	}
+		.btn{
+			margin: 2vh 25vw;
+			align-self: center;
+			width: 8vw;
+			height: 5vh;
+			color: #e53935;
+			font-size: 15px	;
+			border-radius: 25px;
+			transition: 0.3s;
+		}
+		.btn:hover{
+			cursor: pointer;
+			width: 9vw;
+			transition: 0.3s;
+			color: #e53935;
+		}
+  	</style>
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-inverse">
+    	<div class="container-fluid">
+        	<div class="navbar-header">
+            	<a class="navbar-brand" href="home.html">Digital Restaurants</a>
+        	</div>
+        	<ul class="nav navbar-nav">
+           		<li class="active"><a href="#">Home</a></li>
+            	<li><a href="aboutus.html">About us</a></li>
+            	<li><a href="contactus.html">Contact Us</a></li>
+        	</ul>
+    	</div>
+    	</nav>
+    	<div class="outer">
+    		<h2 style="text-align: center;font-weight: bold;color: white;font-size: 40px;">Login</h2>
+  			<p style="text-align: center;color: white;">Login using registered credentials</p><br>
+			<form action="reg.php" method="post">
+			    <div class="input-group">
+			    	<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+			    	<input id="phone" type="text" class="form-control" name="phone" placeholder="Phone">
+			    </div>
+			    <div class="input-group">
+			    	<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+			    	<input id="pw" type="text" class="form-control" name="pw" placeholder="Password">
+			    </div>
+				<input type="submit" value="Submit" class="btn">
+			</form>
+    	</div>
+	</div>
+</body>
+</html>
